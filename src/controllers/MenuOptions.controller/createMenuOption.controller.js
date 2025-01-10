@@ -151,6 +151,14 @@ export const createMenuOptions = asyncHandler(async(req,res)=>{
         throw new Error ("No menu found")
     }
 
+    // check if multiple selection is false then max-selection cannot be greater than one
+    if(!multiple_selection && max_selection > 1){
+        throw new Error('Maxselection cannot be greater than one')
+
+    }
+    if(multiple_selection && max_selection < 1){
+        throw new Error('Maxselection cannot be less than one')
+    }
 
     const menuOption = await prisma.menuOption.create({
         data:{

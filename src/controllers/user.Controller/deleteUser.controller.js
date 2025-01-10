@@ -99,3 +99,8 @@ export const deleteUser= asyncHandler(async(req,res)=>{
         message:'User deleted successfully'
     })
  })
+
+
+
+
+

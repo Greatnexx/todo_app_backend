@@ -101,8 +101,8 @@ import prisma from "../../prisma/client.js";
 export const getAllCategory = asyncHandler(async(req,res)=>{
 
 const {page= 1,limit=10,sort}= req.query;
-const pageNumber= parseInt(page, 10)||1
-const limitNumber= parseInt(limit, 10)||10
+const pageNumber= parseInt(page)||1
+const limitNumber= parseInt(limit)||10
 const skip= (pageNumber-1)*limitNumber
 
     const allowedFilters = ["name"]

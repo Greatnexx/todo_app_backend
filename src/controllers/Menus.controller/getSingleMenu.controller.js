@@ -81,10 +81,15 @@ import prisma from "../../prisma/client.js";
 export const getMenuByID = asyncHandler(async(req,res)=>{
 
     const {menuID} =req.params;
+    
 
     const menu = await prisma.menu.findUnique({
         where:{
             id:menuID
+        },
+        include:{
+            menu_option:true
+            
         }
     })
 

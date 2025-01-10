@@ -115,7 +115,7 @@ export const getAllMenus = asyncHandler(async(req,res)=>{
     const limitNumber= parseInt(limit, 10)||10
     const skip= (pageNumber-1)*limitNumber
 
-    const allowedFilters = ["name","price","description","category_id",]
+    const allowedFilters = ["name","price","category_id",]
     const filters = {}
     for (const filter of allowedFilters) {
         if (req.body?.[filter] !== undefined) {
