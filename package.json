@@ -4,8 +4,8 @@
   "type": "module",
   "main": "/src/server.js",
   "scripts": {
-    "dev": "nodemon",
-    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "start": "nodemon src/server.js",
     "studio": " npx prisma studio",
     "start:db": "docker compose up",
     "generate": "npx prisma generate",
