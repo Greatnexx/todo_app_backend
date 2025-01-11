@@ -30,7 +30,7 @@ const startServer =()=>{
         next();
       });
 
-      app.get("/", async (_req, res) => {
+      app.get("/test", async (_req, res) => {
         return res.status(200).send("Welcome to The TODO API!");
       });
 

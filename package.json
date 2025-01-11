@@ -2,16 +2,15 @@
   "name": "full_stack-todo_app",
   "version": "1.0.0",
   "type": "module",
+  "main": "/src/server.js",
   "scripts": {
-    "dev" :"nodemon",
+    "dev": "nodemon",
     "start": "node src/server.js",
     "studio": " npx prisma studio",
     "start:db": "docker compose up",
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev"
-    
   },
-
   "prisma": {
     "schema": "src/prisma/schema.prisma"
   },
@@ -21,6 +20,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.0.0",
+    "@vercel/node": "^5.0.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.21.1",
