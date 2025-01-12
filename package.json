@@ -11,6 +11,7 @@
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev",
     "build": "npx prisma generate"
+
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
