@@ -10,7 +10,7 @@
     "start:db": "docker compose up",
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev",
-    "buildCommand": "npx prisma generate && npm run build"
+    "build": "npx prisma generate"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
