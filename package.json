@@ -11,9 +11,6 @@
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev",
     "buildCommand": "npx prisma generate && npm run build"
-    
-    
-
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
@@ -23,7 +20,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.0.0",
+    "@prisma/client": "^6.2.1",
     "@vercel/node": "^5.0.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -38,6 +35,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
-    "prisma": "^6.0.0"
+    "prisma": "^6.2.1"
   }
 }
