@@ -2,7 +2,7 @@
   "name": "full_stack-todo_app",
   "version": "1.0.0",
   "type": "module",
-  "main": "/src/server.js",
+  "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "nodemon src/server.js",
